@@ -60,25 +60,5 @@ a_star_pathfinding/
 ├── .gitignore               # Files ignored by git
 └── images/
     └── screenshot.png       # Example image used in README
-```
-
-## 🛣️ How it works (summary)
-- **Heuristic (Euclidean)**: `h(a,b) = sqrt((bx-ax)^2 + (by-ay)^2)`.
-- **Neighbors**: generated with `get_neighbors(...)` respecting bounds and diagonals.
-- **Closed set**: `closed_set` prevents revisiting nodes.
-- **Reconstruction**: `came_from` stores each node’s parent to build the final path.
-
-## 🚧 Current limitations
-- If no valid path exists, you will see **"No path found"**.
-- Node selection uses **only** the heuristic `h(n)`; if you want the **classic A\***, use `f(n) = g(n) + h(n)` with accumulated cost `g(n)`.
-
-## 🗺️ Future improvements
-- Implement full **A\*** (`f = g + h`) with costs for moves (cardinal/diagonal).
-- Add **cell costs** (different terrain costs).
-- Allow parameters from **CLI** (`--width`, `--height`, `--seed`, `--num-obstacles`, etc.).
-- **Random obstacle generation** with configurable density.
-- **Step-by-step animation** of node expansion.
-- **Interactive mouse selection** of start/end/obstacles.
-- Save the **path** and **figure** to files (PNG/JSON).
 
 ---

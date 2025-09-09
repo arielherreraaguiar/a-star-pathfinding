@@ -60,5 +60,3 @@ a_star_pathfinding/
 ├── .gitignore               # Files ignored by git
 └── images/
     └── screenshot.png       # Example image used in README
-
----
